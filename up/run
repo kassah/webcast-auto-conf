@@ -83,6 +83,8 @@ echo 40960000 > /proc/sys/net/core/wmem_max
 
 ifconfig lo up
 
+rm -f /box/auto_config.log
+
 chmod +x /tmp/remoteConfig
 
 /tmp/nginx/sbin/nginx -p /tmp/nginx/
